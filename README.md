@@ -25,7 +25,7 @@ The provided code demonstrates how to replace specific strings in two different 
 1. **Access the Layout File:** Rename your `.pbix` file to `.zip`. Extract the contents. The `layout.json` file is typically located under `Report/Layout`.
 2. **Modify the Script:** Update the `base_path`, `referrer_path`, `appropriations_path`, `page_names`, `old_string`, and `new_string` variables in the Python script to match your report and replacements.
 3. **Run the Script:** Execute the Python script.
-4.  **Rebuild the PBIX:
+4.  **Rebuild the PBIX**:
    * Delete the `securityBindings.json` file (if present) from the extracted folder structure.  This file can sometimes cause issues when rebuilding the PBIX.
     * Zip the *entire extracted folder structure* (including the `Report` folder and its contents).
     * Rename the zip file back to a `.pbix` extension.
@@ -35,7 +35,7 @@ The provided code demonstrates how to replace specific strings in two different 
 * **Backup**: It's highly recommended to create backups of your Power BI report layout files before running this script. This will allow you to revert to the original state if any issues occur.
 * **Testing**: Test the script on a copy of your report files first to ensure the replacements are performed as expected.
 * **PBIX Structure**:
-i. Power BI reports are zipped archives. Modifying `layout.json` requires extracting it, making changes, and rebuilding the `.pbix`.  Zip the *entire extracted folder structure*.
-ii. It's often necessary to delete the `securityBindings.json` file before re-zipping to prevent potential inconsistencies and corruption issues in the rebuilt PBIX file.  This file manages data connections and permissions. Sometimes, when you modify the layout and rebuild the PBIX, this file can become out of sync, leading to errors or unexpected behavior in Power BI. Deleting it forces Power BI to regenerate the file, often resolving conflicts.
+  * Power BI reports are zipped archives. Modifying `layout.json` requires extracting it, making changes, and rebuilding the `.pbix`.  Zip the *entire extracted folder structure*.
+  * It's often necessary to delete the `securityBindings.json` file before re-zipping to prevent potential inconsistencies and corruption issues in the rebuilt PBIX file.  This file manages data connections and permissions. Sometimes, when you modify the layout and rebuild the PBIX, this file can become out of sync, leading to errors or unexpected behavior in Power BI. Deleting it forces Power BI to regenerate the file, often resolving conflicts.
 
 
