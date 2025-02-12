@@ -44,7 +44,6 @@ def replace_string(layout, old_string, new_string, page_names = None):
 def main():
     base_path = r"C:\Users\myhvuong"
 
-
     referrer_path = os.path.join(base_path, "Referrer Report_PowerBI_AE - Training", "Report", "Layout")
     appropriations_path = os.path.join(base_path, "Appropriations Dashboard - Training", "Report", "Layout")
    
@@ -56,7 +55,7 @@ def main():
         replace_string(referrer_layout, old_string = f'DL {i} ', new_string = f'Email {i} ', page_names = page_names)
    
     save_file(referrer_layout, referrer_path)
-   
+    
    
     # Load and process the Appropriations Dashboard
     appropriations_layout = load_file(appropriations_path)
