@@ -25,10 +25,10 @@ The provided code demonstrates how to replace specific strings in two different 
 1. **Access the Layout File:** Rename your `.pbix` file to `.zip`. Extract the contents. The `layout.json` file is typically located under `Report/Layout`.
 2. **Modify the Script:** Update the `base_path`, `referrer_path`, `appropriations_path`, `page_names`, `old_string`, and `new_string` variables in the Python script to match your report and replacements.
 3. **Run the Script:** Execute the Python script.
-4.  **Rebuild the PBIX**:
-  * Delete the `securityBindings.json` file (if present) from the extracted folder structure.  This file can sometimes cause issues when rebuilding the PBIX.
-  * Zip the *entire extracted folder structure* (including the `Report` folder and its contents).
-  * Rename the zip file back to a `.pbix` extension.
+4. **Rebuild the PBIX:**
+   * Delete the `securityBindings.json` file (if present) from the extracted folder structure.  This file can sometimes cause issues when rebuilding the PBIX.
+   * Zip the *entire extracted folder structure* (including the `Report` folder and its contents).
+   * Rename the zip file back to a `.pbix` extension.
 
 ## Important Considerations
 
